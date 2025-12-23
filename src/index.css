@@ -1,95 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Jersey+10&display=swap");
+@import "tailwindcss";
+@tailwind utilities;
+
+@theme {
+  --font-jersey: "Jersey 10", sans-serif;
+}
+
+@layer utilities {
+  .pixel-shadow {
+    text-shadow:
+      -2px -2px 0 #000,
+       2px -2px 0 #000,
+      -2px  2px 0 #000,
+       2px  2px 0 #000,
+       6px  6px 0 #30888E;
+  }
+}
+
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
 body {
   min-height: 100vh;
-  background-color: #0b1220;
-  color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  font-family: "Press Start 2P", monospace;
-}
-
-.navbar {
-  width: 100%;
-  background-color: #ffffff;
-  display: flex;
-  align-items: center;
-  padding: 12px 40px;
-}
-
-.nav-logo img {
-  height: 36px;
-  image-rendering: pixelated;
-  cursor: pointer;
-}
-
-.nav-center {
-  display: flex;
-  gap: 48px;
-  margin: 0 auto;
-}
-
-.nav-item {
-  color: #000000;
-  font-size: 11px;
-  letter-spacing: 1.5px;
-  cursor: pointer;
-  user-select: none;
-}
-
-.sponsors {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.sponsors-title {
-  margin-top: 60px;
-  margin-bottom: 100px;
-  font-size: 64px;
-  line-height: 1;
-  color: #ffffff;
-  text-shadow:
-    -2px -2px 0 #000,
-     2px -2px 0 #000,
-    -2px  2px 0 #000,
-     2px  2px 0 #000,
-     8px  8px 0 #4f8f95;
-}
-
-.sponsor-row {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 140px;
-  margin-bottom: 80px;
-}
-
-.sponsor-row-single {
-  margin-top: 20px;
-}
-
-.sponsor-item {
-  width: 220px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.sponsor-item img {
-  width: 120px;
-  height: 120px;
-  object-fit: contain;
-  display: block;
-  margin-bottom: 24px;
-}
-
-.sponsor-item p {
-  min-height: 60px;
-  text-align: center;
+  background-color: black;
+  font-family: "jersey 10";
 }

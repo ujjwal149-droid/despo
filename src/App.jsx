@@ -1,12 +1,11 @@
 import Navbar from "./components/Navbar";
-import Sponsors from "./pages/Sponsors";
+import SponsorsPage from "./pages/SponsorsPage";
 
 function App() {
   return (
     <>
-      <div className="background-accent"></div>
-      <Navbar />
-      <Sponsors />
+      {/* <Navbar /> */}
+      <SponsorsPage />
     </>
   );
 }
